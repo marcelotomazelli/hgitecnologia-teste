@@ -1,0 +1,58 @@
+body {
+    background-color: #F9F9F9;
+}
+
+:focus {
+    outline: none !important;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    border-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-item:not(.active) .nav-link {
+    color: rgba(255,255,255,.8);
+}
+.navbar-dark .navbar-nav .nav-item:not(.active) .nav-link:hover {
+    color: rgba(255,255,255,.9);
+}
+
+.header_toggle_ico {
+    color: rgba(255,255,255,.8);
+    font-size: 1.3em;
+}
+
+.nav-link i,
+.dropdown-menu > a > i {
+    width: 1.5em;
+}
+
+.shared_form .form-control {
+    background-color: transparent;
+    padding: .5rem 1rem;
+}
+
+.shared_form i {
+    width: 1.5em;
+}
+
+.shared_form .input-group-text i {
+    text-align: center;
+}
+
+.shared_form .btn i {
+    margin-right: .5rem;
+}
+
+.img_photo {
+    border-radius: 100%;
+}

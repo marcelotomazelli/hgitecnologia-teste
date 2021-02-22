@@ -1,0 +1,119 @@
+.admin_header .navbar-brand img {
+    height: 20px;
+}
+
+.admin_header {
+    z-index: 2;
+    position: fixed;
+
+    top: 0;
+}
+
+.admin_header_admin_name {
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+.admin_header #adminNav .nav-link i {
+    width: 2em;
+}
+
+.admin_header #adminNav .nav-item:not(.active) .nav-link:hover {
+    color:  rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.admin_header #adminNav .nav-item.active .nav-link {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+@media (max-width: 991.98px) {
+    .admin_header {
+        width: 100%;
+    }
+
+    .admin_main {
+        margin-top: 56px;        
+    }
+
+    .admin_header_admin_photo {
+        max-height: 60px;
+    }
+
+    .admin_header #adminNav .nav-item.active .nav-link {
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .admin_header {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+
+        width: 250px;
+    }
+
+    .admin_main {
+        margin-left: 250px;        
+    }
+
+    .admin_header_admin_photo {
+        height: 120px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .admin_users_user .admin_users_user_photo {
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .admin_users_user .admin_users_user_photo {
+        height: 70px;
+    }
+}
+
+.admin_users_user .admin_users_user_name {
+    white-space: nowrap;
+    font-size: 1.5em;
+}
+
+.admin_users_user .admin_users_user_infos p {
+    white-space: nowrap;
+    font-size: 0.9em;
+    color: var(--secondary);
+}
+
+.admin_users_user .admin_users_user_infos i {
+    margin-right: .5rem;
+    width: 1.5em;
+    text-align: center;
+}
+
+
+.admin_users_user .admin_users_user_remove {
+    cursor: pointer;
+    color: var(--danger);
+    font-size: 1.5em;
+}
+
+.admin_users_user .admin_users_user_remove:hover {
+    color: #c82333;
+}
+
+.admin_users_divisor {
+    margin: 1.25rem 0;
+}
+
+.admin_users_divisor::before {
+    content: '';
+    height: 1px;
+    display: block;
+    background-color: #D1D1D1;
+}
+
+.admin_users_list_empty {
+    color: var(--secondary);
+}

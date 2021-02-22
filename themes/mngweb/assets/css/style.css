@@ -1,0 +1,117 @@
+html.web_fullheight {
+    height: 100%;
+    min-height: 100%;
+}
+
+html.web_fullheight > body {
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* HEADER */
+.web_header .web_header_brand {
+    height: 20px;
+    display: block;
+}
+
+.web_header #webNav .nav-link {
+    border-radius: 5px;
+}
+
+.web_header #webNav .web_header_highlight {
+    color: var(--dark);
+    background-color: rgba(255,255,255,.8);
+}
+
+.web_header #webNav .web_header_highlight:hover,
+.web_header #webNav .nav-link.dropdown-toggle:focus {
+    background-color: rgba(255,255,255,.9);
+}
+
+@media (max-width: 767.98px) {
+    .web_header #webNav .navbar-nav .nav-link:not(.web_header_highlight) {
+        background-color: rgba(255,255,255,.3);
+    }
+}
+
+@media (min-width: 768px) {
+    .web_header #webNav .web_header_highlight {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+.web_header #webNavUser + .dropdown-menu > a > i.fa-sign-out-alt {
+    color: var(--danger);
+}
+
+.web_profile_image {
+    max-height: 150px;
+}
+
+.web_error,
+.web_error .container,
+.web_error .container .web_error_header {
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .web_error_code {
+        font-size: 8em;
+    }
+}
+
+@media (min-width: 768px) {
+    .web_error_code {
+        font-size: 10em;
+    }
+}
+
+.web_error_desc {
+    color: var(--secondary);
+}
+
+.web_footer {
+    background-color: #E8E8E8;
+}
+
+/* HOME */
+
+.web_home_cta {
+    background-size: cover; 
+}
+
+.web_home_cta .carousel-control-next, 
+.web_home_cta .carousel-control-prev {
+    width: 5%;
+}
+
+.web_home_cta .web_home_cta_item {
+    min-height: 500px;
+}
+
+
+.web_home_about_card {
+    /*border: 1px solid red;*/
+}
+
+.web_home_about_card .web_home_card_icon {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    padding: .5rem;
+    transition: box-shadow .3s;
+}
+
+.web_home_about_card:hover .web_home_card_icon {
+    box-shadow: 0 0 10px #007bff50;
+}
+
+.web_home_about_card .web_home_card_icon img {
+    max-height: 200px;
+}
+
+.web_home_about_card .web_home_card_title {
+    font-size: 1.2em;
+}
